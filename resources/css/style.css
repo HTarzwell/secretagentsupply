@@ -5,9 +5,51 @@ body {
   font-family: Helvetica;
   color: white;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 960px;
 }
+/** Header Section **/
 header {
   text-transform: uppercase;
   font-size: 1rem;
   padding: 0.66rem;
+  display: flex;
+  justify-content: flex-start;
+}
+header .logo {
+	padding-right: 1rem;
+}
+header .page-title {
+	display: flex;
+	align-self: center;
+}
+/**Hero Section**/
+.hero {
+	background-image: url("moto.jpeg");
+	background-repeat: no-repeat;
+	height: 25rem;
+	width: 100%;
+	padding-top: 9rem;
+	padding-left: 6rem;
+}
+.new-arrival {
+	background-color: black;
+	width: 20rem;
+	height: 10rem;
+	padding: 2rem 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.new-arrival h3 {
+	font-weight: bold;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.new-arrival h2 {
+	font-weight: bold;
+	font-size: 2rem;
+	text-transform: uppercase;
+	padding-top: 0.25rem;
 }
