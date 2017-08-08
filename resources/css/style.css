@@ -1,6 +1,5 @@
 html {
   font-size: 18px;
-  width: 960px;
 }
 body {
   font-family: Helvetica;
@@ -82,17 +81,17 @@ header .page-title {
 .stock {
 	width: 30%;
 	border: 4px solid black;
-	padding: 2rem;
 	margin: 3rem;
 }
 .stock img {
 	height: 9rem;
-	width: 9rem;
+	padding: 2rem;
 }
 .stock h5 {
 	color: white;
 	background-color: black;
 	padding: 0.5rem;
+	text-align: center;
 }
 .store-details {
   display: flex;
