@@ -2,46 +2,54 @@ html {
   font-size: 18px;
 }
 body {
+  background-color: black;
+  color: white;
   font-family: Helvetica;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 /** Header Section **/
 header {
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  font-size: 1rem;
-  padding: 0.66rem;
-  display: flex;
   justify-content: flex-start;
 }
-header .logo {
-	padding-right: 1rem;
+.logo-title {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-grow: 1;
 }
-header .page-title {
-	display: flex;
-	align-self: center;
+.logo {
+  height: 1.5rem;
+  width: auto;
+  padding: 0px;
+  margin: auto 1rem auto 0.5rem;
+}
+.title {
+  font-size: 1rem;
+  margin: 0.66rem 0;
+  text-transform: uppercase;
 }
 /**Hero Section**/
 .hero {
 	background-image: url("moto.jpeg");
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	height: 25rem;
-	width: 960px;
-	padding-top: 9rem;
-	padding-left: 6rem;
+}
+.banner {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
 }
 .new-arrival {
 	background-color: black;
-	color: white;
-	width: 20rem;
-	height: 10rem;
-	padding: 2rem 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-top: 9rem;
+	width: 20rem;
+	padding: 2rem 3rem;
 }
 .new-arrival h3 {
 	font-weight: bold;
@@ -71,6 +79,7 @@ header .page-title {
 }
 /** Main Body Section **/
 .mainbody {
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -112,9 +121,7 @@ header .page-title {
 /** Footer Section **/
 footer {
   display: flex;
-  background-color: black;
   align-items: center;
-  color: white;
   height: 5rem;
   padding: 2rem;
 }
