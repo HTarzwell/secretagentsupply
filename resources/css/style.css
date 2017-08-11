@@ -79,6 +79,9 @@ header {
   color: white;
   text-decoration: none;
 }
+.shrink {
+	display: none;
+}
 /** Main Body Section AUGUST 10 FLEXBOX CONTAINER/CONTAINEE PROBLEM**/
 .container {
 }
@@ -141,7 +144,40 @@ header {
 footer {
   display: flex;
   flex-grow: 1;
+  max-width: 960px;
+  margin: 0 auto;
   align-items: center;
   height: 5rem;
   padding: 2rem;
+}
+/** For screens less than 768 px **/
+@media only screen and (max-width: 768px) {
+	.menu nav {
+		justify-content: center;
+	}
+	.full {
+		display: none;
+	}
+	.shrink {
+		display: initial;
+	}
+	.product-images .stock {
+		width: 40%;
+	}
+	.product-images #glasses {
+		display: none;
+	}
+}
+/** For screens less than 470px **/
+@media only screen and (max-width: 470px) {
+	body {
+		max-width: 470px;
+	}
+	.hero {
+		height: 15rem;
+	}
+	.new-arrival {
+		margin-top: 10rem;
+		width: 100%;
+	}
 }
