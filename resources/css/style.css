@@ -79,51 +79,54 @@ header {
   color: white;
   text-decoration: none;
 }
-/** Main Body Section **/
+/** Main Body Section AUGUST 10 FLEXBOX CONTAINER/CONTAINEE PROBLEM**/
+.container {
+}
 .mainbody {
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  align-items: center;
 }
 .product-images {
-  display: flex;
-  justify-content: space-between;
   max-width: 960px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
   flex-grow: 1;
+  justify-content: space-around;
+  margin: 3rem 0 0 0;
 }
 .stock {
-	width: 30%;
-	border: 4px solid black;
-	margin: 3rem 0rem;
-	display: inline-flex;
-	flex-direction: column;
-	align-items: center;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 .stock img {
-	display: flex;
-	align-items: center;
-	height: 9rem;
-	margin: 2rem 0rem;
+  padding: 2rem;
+  height: 9rem;
 }
 .stock h5 {
-	background-color: black;
-	margin: 0px;
-	width: 100%;
-	padding: 0.5rem 0rem;
-	text-align: center;
-}
-.store-details {
-  display: flex;
-  max-width: 960px;
-  margin: 0rem auto 4rem auto;
-}
-.store-details h5 {
   background-color: black;
   color: white;
-  padding: 1rem 2rem;
+  text-align: center;
+  padding: 0.5rem
+}
+.store-details {
+  color: black;
+  display: flex;
+  flex-grow: 1;
+  margin: 3rem 0 4rem 0;
+  justify-content: space-around;
+  max-width: 960px;
+}
+.infoboxes {
+  width: 35%;
+}
+.infoboxes h5 {
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
 }
 /** Footer Section **/
 footer {
