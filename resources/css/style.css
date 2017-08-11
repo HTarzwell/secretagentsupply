@@ -90,6 +90,7 @@ header {
 }
 .product-images {
   max-width: 960px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -114,23 +115,32 @@ header {
 }
 .store-details {
   color: black;
-  display: flex;
-  flex-grow: 1;
-  margin: 3rem 0 4rem 0;
-  justify-content: space-around;
   max-width: 960px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .infoboxes {
-  width: 35%;
+  display: flex;
+  margin: 3rem 0 4rem 0;
+  width: 97%;
+  justify-content: space-between;
 }
 .infoboxes h5 {
   background-color: black;
   color: white;
   padding: 1rem 0 1rem 2rem;
 }
+.hours {
+  width: 35%;
+}
+.location {
+  width: 35%;
+}
 /** Footer Section **/
 footer {
   display: flex;
+  flex-grow: 1;
   align-items: center;
   height: 5rem;
   padding: 2rem;
