@@ -179,5 +179,30 @@ footer {
 	.new-arrival {
 		margin-top: 10rem;
 		width: 100%;
+		padding: 1rem 2rem;
+	}
+	.new-arrival h3 {
+	font-size: 0.77rem;
+	}
+	.new-arrival h2 {
+	font-size: 1rem;
+	}
+	.product-images #watch {
+	display: none;
+	}
+	.product-images .stock {
+	width: 90%;
+	}
+	.infoboxes {
+		flex-direction: column;
+	}
+	.hours {
+	width: 100%;
+	}
+	.location {
+	width: 100%;
+	}
+	footer p {
+	text-align: center;
 	}
 }
